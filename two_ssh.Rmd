@@ -1,6 +1,8 @@
 ---
 title: "What if you need to establish two ssh connections to reach the submission node"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    css: main.css
 vignette: >
   %\VignetteIndexEntry{What if you need to establish two ssh connections to reach the submission node}
   %\VignetteEngine{knitr::rmarkdown}

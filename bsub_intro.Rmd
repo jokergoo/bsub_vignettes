@@ -1,6 +1,8 @@
 ---
 title: "Send R code/R scripts/shell commands to LSF cluster"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    css: main.css
 vignette: >
   %\VignetteIndexEntry{Send R code/R scripts/shell commands to LSF cluster}
   %\VignetteEngine{knitr::rmarkdown}
@@ -508,7 +510,7 @@ bsub_chunk(name = "example",
 Setting `local = TRUE` directly runs the code chunk in the same R session (do not submit
 to the cluster).
 
-```{r}
+```{r, eval = FALSE}
 bsub_chunk(name = "example", local = TRUE,
 { 
     cat("blablabla...\n")

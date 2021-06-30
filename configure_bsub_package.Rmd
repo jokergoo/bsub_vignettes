@@ -1,6 +1,8 @@
 ---
 title: "Configure bsub package"
-output: rmarkdown::html_vignette
+output: 
+  rmarkdown::html_vignette:
+    css: main.css
 vignette: >
   %\VignetteIndexEntry{Configure bsub package}
   %\VignetteEngine{knitr::rmarkdown}
